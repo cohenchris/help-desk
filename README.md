@@ -25,11 +25,12 @@ adb shell
 pm install-existing --user 0 <pkg_name>
 ```
 
-### Restore nextcloud backup
-```
+### Restore mediaserver/nextcloud backup
+```sh
 sudo su
 gpg -d --pinentry-mode=loopback your_archive.tgz.gpg | tar xz
-cd cloud
+cd cloud            # for cloud
+cd mediaserver      # for mediaserver
 docker network create shared
 docker-compose up -d
 ```
