@@ -12,3 +12,10 @@ Before plugged in for the first time:
 When plugged in for the first time (for laptop display eDP-1 and external display HDMI-2)
 `xrandr --output eDP-1 --off --output HDMI-2 --auto --primary`
 `autorandr --save docked`
+
+
+### Reinstall Android app that you deleted
+```
+adb shell
+$ pm install-existing --user 0 <pkg_name>
+```
