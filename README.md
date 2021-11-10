@@ -29,8 +29,7 @@ pm install-existing --user 0 <pkg_name>
 ```sh
 sudo su
 gpg -d --pinentry-mode=loopback your_archive.tgz.gpg | tar xz
-cd cloud            # for cloud
-cd mediaserver      # for mediaserver
+# cd into created directory, find docker-compose file
 docker network create shared
 docker-compose up -d
 ```
