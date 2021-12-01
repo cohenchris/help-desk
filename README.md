@@ -33,3 +33,20 @@ gpg -d --pinentry-mode=loopback your_archive.tgz.gpg | tar xz
 docker network create shared
 docker-compose up -d
 ```
+
+### Generate an ed25519 SSH key
+```sh
+ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "john@example.com"
+```
+
+### Mount an SD card
+```sh
+sudo fdisk -l   # find sd card device name here
+sudo mkdir /mnt/sd
+sudo mount <<device_name>> /mnt/sd
+
+# after you're done...
+
+sudo unount /mnt/sd
+sudo rm -r /mnt/sd
+```
