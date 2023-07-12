@@ -75,6 +75,12 @@ docker exec -it nextcloud php occ preview:generate-all -vvv
 docker exec -it nextcloud php occ files:scan --all
 ```
 
+## Set up NUT (Network UPS Tools)
+https://wiki.archlinux.org/title/Network_UPS_Tools
+
+## Set up remote desktop with XRDP
+https://wiki.archlinux.org/title/Xrdp
+
 <!----------------------------------------------------------------------------->
 
 # Misc
