@@ -46,6 +46,10 @@ sudo unount /mnt/sd
 sudo rm -r /mnt/sd
 ```
 
+## Docker takes a long time to start at boot
+[Solution: remove the dependency on network-online.target for docker.service](https://superuser.com/questions/1356698/docker-service-takes-1-minute-and-30-seconds-causing-slow-boot)
+`sudo vim /lib/systemd/system/docker.service`
+
 <!----------------------------------------------------------------------------->
 
 # Security
