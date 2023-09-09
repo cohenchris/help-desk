@@ -50,6 +50,9 @@ sudo rm -r /mnt/sd
 [Solution: remove the dependency on network-online.target for docker.service](https://superuser.com/questions/1356698/docker-service-takes-1-minute-and-30-seconds-causing-slow-boot)
 `sudo vim /lib/systemd/system/docker.service`
 
+## Local DNS Doesn't Stick
+https://serverfault.com/questions/986231/cannot-ssh-or-ping-hostname-but-dig-and-nslookup-work-on-ubuntu-18-04
+
 <!----------------------------------------------------------------------------->
 
 # Security
